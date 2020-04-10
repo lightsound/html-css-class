@@ -2,13 +2,13 @@
 
 # しまぶーの IT 大学
 
-このリポジトリでは『HTML & CSS レイアウト』の講座で使ったコードを保管しています。
+## このページの使い方
 
-# このページの使い方
+このリポジトリには『HTML & CSS レイアウト』の講座で使ったコードを保管しています。
 
 例えば **001_Introduction** とありますが、この中に実際に使ったコードを置いてあります。第 1 回目は 001、2 回目は 002、...という感じでコードを置いていきます。
 
-# リンク
+## リンク
 
 - [YouTube](https://www.youtube.com/channel/UCti6dG0zSAetLGGYcgNML4Q)
 - [Twitter](https://twitter.com/shimabu_it)
