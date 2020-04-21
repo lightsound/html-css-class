@@ -1,0 +1,32 @@
+body {
+    width: 700px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+div {
+    display: flex;
+    flex: 1;
+}
+main {
+    flex: 1;
+}
+nav {
+    width: 100px;
+}
+aside {
+    width: 120px;
+}
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%;
+    }
+    div {
+        flex-direction: column;
+    }
+    nav,
+    aside {
+        width: 100%;
+    }
+}
