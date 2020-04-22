@@ -1,9 +1,12 @@
 body {
-    width: 700px;
+    width: 800px;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+header {
+    height: 150px;
 }
 div {
     display: flex;
@@ -13,20 +16,24 @@ main {
     flex: 1;
 }
 nav {
-    width: 100px;
+    width: 150px;
 }
 aside {
-    width: 120px;
+    width: 200px;
 }
-@media screen and (max-width: 800px) {
-    body {
+footer {
+    height: 200px;
+}
+@media screen and (max-width: 900px) {
+    body,
+    nav,
+    aside {
         width: 100%;
     }
     div {
         flex-direction: column;
     }
-    nav,
-    aside {
-        width: 100%;
+    main {
+        order: -1;
     }
 }
