@@ -1,4 +1,5 @@
 body {
+    font-size: 2rem;
     width: 800px;
     margin: 0 auto;
     min-height: 100vh;
@@ -22,9 +23,9 @@ aside {
     width: 200px;
 }
 footer {
-    height: 200px;
+    height: 300px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     body,
     nav,
     aside {

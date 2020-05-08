@@ -1,0 +1,41 @@
+body {
+    font-size: 2rem;
+    width: 800px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: grid;
+    grid-template:
+        "... ...... ...... ...... ...... ...... ..."
+        "... header header header header header ..." 150px
+        "... ...... ...... ...... ...... ...... ..."
+        "... left   ...... center ...... right  ..." 1fr
+        "... ...... ...... ...... ...... ...... ..."
+        "... footer footer footer footer footer ..." 300px
+        "... ...... ...... ...... ...... ...... ..."
+        / auto 150px auto 1fr auto 200px auto;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: center;
+}
+nav {
+    grid-area: left;
+}
+aside {
+    grid-area: right;
+}
+footer {
+    grid-area: footer;
+}
+@media screen and (max-width: 1000px) {
+    body {
+        grid-template:
+            "header" 150px
+            "center" 1fr
+            "left  "
+            "right "
+            "footer" 300px;
+    }
+}
