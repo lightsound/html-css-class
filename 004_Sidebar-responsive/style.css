@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    display: flex;
+    font-size: 2rem;
+    min-height: 100vh;
+}
+main {
+    width: 700px;
+    margin: 0 auto;
+}
+aside {
+    width: 20%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    margin-bottom: auto;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* 🍔 */
+input[type="checkbox"] {
+    position: absolute;
+    left: -100vw;
+}
+.open,
+.close {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 100%;
+        padding-top: 50px;
+    }
+    /* 🍔 */
+    aside {
+        position: absolute;
+        left: -250px;
+        height: 100%;
+        transition: left 0.2s ease;
+    }
+    input[type="checkbox"]:checked ~ aside {
+        left: 0;
+    }
+    input[type="checkbox"]:checked ~ .back {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8) !important;
+    }
+    .open,
+    .close {
+        cursor: pointer;
+        display: block;
+    }
+    .open {
+        position: absolute;
+    }
+}
