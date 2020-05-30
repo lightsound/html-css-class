@@ -7,18 +7,20 @@ body {
 main {
     width: 700px;
     margin: 0 auto;
+    /* flex: 1; */
 }
 aside {
-    width: 20%;
+    width: 25%;
     min-width: 250px;
     display: flex;
     flex-direction: column;
-}
-nav {
-    margin-bottom: auto;
 }
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+div {
+    margin-top: auto;
+    height: 300px;
 }
