@@ -1,6 +1,7 @@
 header {
     height: 150px;
     margin: 0 auto;
+    background-color: lightblue;
 }
 body1 {
     width: 800px;
@@ -14,17 +15,24 @@ div {
     flex: 1;
 }
 main {
+    display: flex;
     flex: 1;
+
+    background-color: red;
+    justify-content: space-between;
 }
 nav {
     width: 150px;
+    background-color: blue;
 }
 aside {
     width: 200px;
+    background-color: green;
 }
 footer {
     height: 200px;
     margin: 0;
+    background-color: lightgreen;
 }
 @media screen and (max-width: 900px) {
     body,
