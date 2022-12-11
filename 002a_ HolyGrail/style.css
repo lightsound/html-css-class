@@ -2,7 +2,11 @@ header {
     height: 150px;
 }
 body {
-    margin: 0;
+    width: 800px;
+    margin: 0 auto;
+    min-height: 100vh;
+    flex-direction: column;
+    display: flex;
 }
 div {
     display: flex;
@@ -15,13 +19,21 @@ nav {
     width: 150px;
 }
 aside {
-    width: 250px;
+    width: 200px;
 }
 footer {
     height: 200px;
 }
-@media screen and(max-width: 1900px) {
-    body {
+@media screen and (max-width: 900px) {
+    body,
+    nav,
+    aside {
         width: 100%;
+    }
+    div {
+        flex-direction: column;
+    }
+    main {
+        order: -1;
     }
 }
