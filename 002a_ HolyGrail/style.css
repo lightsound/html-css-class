@@ -1,17 +1,11 @@
-body {
-    font-size: 2rem;
-    width: 800px;
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+head {
+    height: 150p;
 }
-header {
-    height: 150px;
+body {
+    margin: 0;
 }
 div {
     display: flex;
-    flex: 1;
 }
 main {
     flex: 1;
@@ -23,18 +17,5 @@ aside {
     width: 200px;
 }
 footer {
-    height: 300px;
-}
-@media screen and (max-width: 1000px) {
-    body,
-    nav,
-    aside {
-        width: 100%;
-    }
-    div {
-        flex-direction: column;
-    }
-    main {
-        order: -1;
-    }
+    height: 100;
 }
