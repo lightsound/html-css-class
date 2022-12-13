@@ -7,15 +7,17 @@ section {
     background-color: silver;
     display: inline-block;
 }
+section > p {
+    color: chartreuse;
+}
 
 .container {
     display: inline-flex;
 }
 
-.flex-container{
-flex-direction: column;
+.flex-container {
+    flex-direction: column;
 }
-
 
 .list1 {
     display: flex;
@@ -26,6 +28,17 @@ flex-direction: column;
     background-color: blueviolet;
     height: 20vh;
 }
+.list1 h1 {
+    text-align: center;
+    color: white;
+}
 .list2 {
-    background-color: aqua;
+    background-color: black;
+    color: orange;
+}
+.list2 h2 {
+    color: darkgreen;
+}
+p.bbb {
+    color: chartreuse;
 }
