@@ -11,11 +11,85 @@
     > -->
     <body1>
         <div>
-            <nav>left</nav>
-            <!-- <main>center</main> -->
-            <main>c e n t e r</main>
+            <nav><h1>left</h1></nav>
+            <main>
+                <ul>
+                    <li>c</li>
+                    <li>e</li>
+                    <li>n</li>
+                    <li>t</li>
+                    <li>e</li>
+                    <li>r</li>
+                </ul>
+            </main>
             <aside>right</aside>
         </div>
     </body1>
     <footer>footer</footer>
+    <br />
+    <br />
+    <table border="1">
+        <tr>
+            <th>セル１</th>
+            <th>セル２</th>
+        </tr>
+        <tr>
+            <td rowspan="2">セル３＋５</td>
+            <td>セル４</td>
+        </tr>
+        <tr>
+            <td>セル６</td>
+        </tr>
+    </table>
+    <form action="expamle.php" method="post" name="contact-form">
+        ここにフォームの部品が入ります。<br />
+        <input type="text" placeholder="名字 名前" name="URL" id="" />
+        <br /><br />
+        <input type="radio" name="gender" value="男" />男
+        <input type="radio" name="gender" value="女" checked />女
+        <input type="radio" name="gender" value="その他" />その他 <br /><br />
+        好きな色：
+        <input type="checkbox" name="travel" value="日本国内" id="japan" />
+        <label for="japan">日本国内</label>
+        <input type="checkbox" name="travel" value="ヨーロッパ" id="europe" />
+        <label for="europe">ヨーロッパ</label>
+        <input type="checkbox" name="travel" value="東南アジア" id="asia" />
+        <label for="asia">東南アジア</label>
+        <input type="checkbox" name="travel" value="アフリカ" id="africa" />
+        <label for="africa">アフリカ</label>
+        <br />
+        <br />
+        <input type="submit" value="サンプルページに飛ぶ" />
+        <input
+            type="submit"
+            src="image/icons8-home-button-50.png"
+            alt="送信する"
+        />
+        <input type="submit" src="image/dl.png" value="送信する" />
+        <a href="./index2.html">
+            <input type="submit" value="サンプルページに飛ぶ"
+        /></a>
+        <br />
+        <br />
+        血液型
+        <select name="bloodtype" id="">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="O">O</option>
+            <option value="AB">AB</option>
+            <option value="不明">不明</option>
+        </select>
+        型
+        <br /><br />
+        <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="メッセージを入力"
+        ></textarea>
+    </form>
+    <a href="./index2.html">
+        <input type="submit" value="サンプルページに飛ぶ"
+    /></a>
 </html>

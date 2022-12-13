@@ -6,9 +6,9 @@ header {
 body1 {
     width: 800px;
     margin: 0 auto;
-    min-height: 50vh;
-    flex-direction: column;
+    min-height: 10vh;
     display: flex;
+    background-color: brown; /*何故か色がつかない*/
 }
 div {
     display: flex;
@@ -19,6 +19,11 @@ main {
     flex: 1;
 
     background-color: red;
+}
+li {
+    list-style: none;
+    flex-direction: column-reverse;
+
     justify-content: space-between;
 }
 nav {
@@ -31,7 +36,7 @@ aside {
 }
 footer {
     height: 200px;
-    margin: 0;
+    margin: 0 auto;
     background-color: lightgreen;
 }
 @media screen and (max-width: 900px) {
@@ -47,3 +52,4 @@ footer {
         order: -1;
     }
 }
+
