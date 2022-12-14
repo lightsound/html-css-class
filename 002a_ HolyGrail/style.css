@@ -1,5 +1,5 @@
 header {
-    height: 150px;
+    height: 100px;
     margin: 0 auto;
     background-color: lightblue;
 }
@@ -35,7 +35,7 @@ aside {
     background-color: green;
 }
 footer {
-    height: 200px;
+    height: 150px;
     margin: 0 auto;
     background-color: lightgreen;
 }
@@ -51,5 +51,9 @@ footer {
     main {
         order: -1;
     }
+    border-top-left-radius: 左上の値;
+  border-top-right-radius: 右上の値;
+  border-bottom-right-radius: 右下の値;
+  border-bottom-left-radius: 左下の値;
 }
 
