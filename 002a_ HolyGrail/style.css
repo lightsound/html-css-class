@@ -2,6 +2,13 @@ header {
     height: 100px;
     margin: 0 auto;
     background-color: lightblue;
+    /* color: white; */
+}
+header:hover {
+    height: 100px;
+    margin: 0 auto;
+    background-color: maroon;
+    font-size: large;
 }
 body1 {
     width: 800px;
@@ -21,13 +28,17 @@ main {
 }
 main:hover {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1;
     background-color: black;
     color: white;
+    flex-direction: row;
 }
 li {
     list-style: none;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
 
     justify-content: space-between;
 }
@@ -51,6 +62,16 @@ footer {
     height: 150px;
     margin: 0 auto;
     background-color: lightgreen;
+}
+footer:hover {
+    /* height: 50px; */
+    margin: 0 auto;
+    background-color: yellow;
+    color: crimson;
+    font-size: large;
+    font-weight: bold;
+    font-family: "メイリオ";
+    text-align: center;
 }
 @media screen and (max-width: 900px) {
     body,
