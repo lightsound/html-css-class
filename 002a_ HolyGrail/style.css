@@ -52,11 +52,10 @@ footer {
         order: -1;
     }
     border-top-left-radius: 左上の値;
-  border-top-right-radius: 右上の値;
-  border-bottom-right-radius: 右下の値;
-  border-bottom-left-radius: 左下の値;
+    border-top-right-radius: 右上の値;
+    border-bottom-right-radius: 右下の値;
+    border-bottom-left-radius: 左下の値;
 }
-
 
 /* ボタン作成の基本形 参考サイト https://jajaaan.co.jp/css/button/
 https://dubdesign.net/download/html-css/button-design/
@@ -85,46 +84,44 @@ button.btn {
 }
 */
 
-
-
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 .btn,
 a.btn,
 button.btn {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.5;
-  position: relative;
-  display: inline-block;
-  padding: 1rem 4rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  color: #212529;
-  border-radius: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
 }
 
-.btn--orange,
+/* .btn--orange,
 a.btn--orange {
   color: #fff;
   background-color: #eb6100;
@@ -138,4 +135,123 @@ a.btn--orange:hover {
 
 a.btn--radius {
   border-radius: 100vh;
+} */
+
+a.btn--orange {
+    color: #fff;
+    background-color: #eb6100;
+    border-bottom: 5px solid #b84c00;
+}
+a.btn--orange:hover {
+    margin-top: 3px;
+    color: #fff;
+    background: #f56500;
+    border-bottom: 2px solid #b84c00;
+}
+a.btn--shadow {
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*その他と主な共通部分は省略*/
+
+a.btn-flat {
+    overflow: hidden;
+
+    padding: 1.5rem 6rem;
+
+    color: #fff;
+    border-radius: 0;
+    background: #000;
+}
+
+a.btn-flat span {
+    position: relative;
+}
+
+a.btn-flat:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100px;
+    height: 100px;
+
+    content: "";
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-80%) translateY(-25px);
+    transform: translateX(-80%) translateY(-25px);
+
+    border-radius: 50%;
+    background: #eb6100;
+}
+
+a.btn-flat:hover:before {
+    width: 400px;
+    height: 400px;
+
+    -webkit-transform: translateX(-1%) translateY(-175px);
+
+    transform: translateX(-1%) translateY(-175px);
+    background: #eb6100;
+}
+
+<br / > <bn > </bn > <br / > <bn > </bn > a.btn-flat {
+    overflow: hidden;
+
+    padding: 1.5rem 6rem;
+
+    color: #fff;
+    border-radius: 0;
+    background: #000;
+}
+
+a.btn-flat span {
+    position: relative;
+    z-index: 1;
+}
+
+a.btn-flat:before {
+    position: absolute;
+    top: 0;
+    left: calc(-100% + 10px);
+
+    width: 100%;
+    height: 100%;
+
+    content: "";
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+
+    background: #094;
+}
+
+a.btn-flat:after {
+    position: absolute;
+    top: 0;
+    right: calc(-100% + 10px);
+
+    width: 100%;
+    height: 100%;
+
+    content: "";
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+
+    background: #094;
+}
+
+a.btn-flat:hover:before {
+    -webkit-transform: translateX(50%) translateY(0);
+    transform: translateX(50%) translateY(0);
+}
+
+a.btn-flat:hover:after {
+    -webkit-transform: translateX(-50%) translateY(0);
+    transform: translateX(-50%) translateY(0);
 }
