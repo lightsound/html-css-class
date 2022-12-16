@@ -17,8 +17,13 @@ div {
 main {
     display: flex;
     flex: 1;
-
     background-color: red;
+}
+main:hover {
+    display: flex;
+    flex: 1;
+    background-color: black;
+    color: white;
 }
 li {
     list-style: none;
@@ -30,9 +35,17 @@ nav {
     width: 150px;
     background-color: blue;
 }
+nav:hover {
+    width: 150px;
+    background-color: pink;
+}
 aside {
     width: 200px;
     background-color: green;
+}
+aside:hover {
+    width: 200px;
+    background-color: olive;
 }
 footer {
     height: 150px;
@@ -257,45 +270,45 @@ a.btn-bside:hover:after {
 }
 /*  */
 a.btn-marrow {
-  border: 2px solid #000;
-  border-radius: 0;
-  background: #fff;
+    border: 2px solid #000;
+    border-radius: 0;
+    background: #fff;
 
-  -webkit-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 
-  transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 a.btn-marrow:before {
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  width: 15px;
-  height: 100%;
+    width: 15px;
+    height: 100%;
 
-  content: '';
-  -webkit-transition: all 1s;/*.3s*/
-  transition: all 1s;/*.3s*/
-  -webkit-transform: translateX(0) translateY(0);
-  transform: translateX(0) translateY(0);
+    content: "";
+    -webkit-transition: all 1s; /*.3s*/
+    transition: all 1s; /*.3s*/
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
 
-  border-radius: 0 50% 50% 0;
-  background: #000;
+    border-radius: 0 50% 50% 0;
+    background: #000;
 }
 
 a.btn-marrow:hover:before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: bold;
-  line-height: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    line-height: 30px;
 
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 
-  content: '\f061';
-  -webkit-transform: translateX(460%) translateY(.5rem);
-  transform: translateX(460%) translateY(.5rem);
+    content: "\f061";
+    -webkit-transform: translateX(460%) translateY(0.5rem);
+    transform: translateX(460%) translateY(0.5rem);
 
-  color: #fff;
-  border-radius: 50%;
+    color: #fff;
+    border-radius: 50%;
 }
