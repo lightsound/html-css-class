@@ -155,7 +155,7 @@ a.btn--shadow {
 
 /*その他と主な共通部分は省略*/
 
-a.btn-flat {
+a.btn-hmoon {
     overflow: hidden;
 
     padding: 1.5rem 6rem;
@@ -165,11 +165,11 @@ a.btn-flat {
     background: #000;
 }
 
-a.btn-flat span {
+a.btn-hmoon span {
     position: relative;
 }
 
-a.btn-flat:before {
+a.btn-hmoon:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -187,7 +187,7 @@ a.btn-flat:before {
     background: #eb6100;
 }
 
-a.btn-flat:hover:before {
+a.btn-hmoon:hover:before {
     width: 400px;
     height: 400px;
 
@@ -196,8 +196,8 @@ a.btn-flat:hover:before {
     transform: translateX(-1%) translateY(-175px);
     background: #eb6100;
 }
-
-<br / > <bn > </bn > <br / > <bn > </bn > a.btn-flat {
+/*  */
+a.btn-bside {
     overflow: hidden;
 
     padding: 1.5rem 6rem;
@@ -207,12 +207,12 @@ a.btn-flat:hover:before {
     background: #000;
 }
 
-a.btn-flat span {
+a.btn-bside span {
     position: relative;
     z-index: 1;
 }
 
-a.btn-flat:before {
+a.btn-bside:before {
     position: absolute;
     top: 0;
     left: calc(-100% + 10px);
@@ -229,7 +229,7 @@ a.btn-flat:before {
     background: #094;
 }
 
-a.btn-flat:after {
+a.btn-bside:after {
     position: absolute;
     top: 0;
     right: calc(-100% + 10px);
@@ -246,12 +246,12 @@ a.btn-flat:after {
     background: #094;
 }
 
-a.btn-flat:hover:before {
+a.btn-bside:hover:before {
     -webkit-transform: translateX(50%) translateY(0);
     transform: translateX(50%) translateY(0);
 }
 
-a.btn-flat:hover:after {
+a.btn-bside:hover:after {
     -webkit-transform: translateX(-50%) translateY(0);
     transform: translateX(-50%) translateY(0);
 }
