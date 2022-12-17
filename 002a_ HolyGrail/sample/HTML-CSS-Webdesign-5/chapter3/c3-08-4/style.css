@@ -1,0 +1,11 @@
+@charset "UTF-8";
+div {
+    background-image: url(images/bg-airplane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+p {
+    text-align: center;
+    padding-top: 30px;
+}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+h1 {
+  font-family: serif;
+}
+h2 {
+    font-family: "游ゴシック体", "Yu Gothic", YuGothic, sans-serif;
+}
+p{
+    font-family: "ヒラギノ丸ゴ Pro W4","Hiragino Maru Gothic Pro", sans-serif;
+}

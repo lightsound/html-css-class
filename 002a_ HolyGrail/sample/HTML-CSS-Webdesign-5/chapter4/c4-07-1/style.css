@@ -1,0 +1,6 @@
+#home {
+   background-image: url(../images/main-bg.jpg);
+   background-color: #0bd;
+   background-blend-mode: hard-light;
+   min-height: 100vh;
+}

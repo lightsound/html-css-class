@@ -1,0 +1,9 @@
+@charset "UTF-8";
+p{
+    border-width: 1px;
+    border-style: solid;
+}
+div {
+    border-width: 4px;
+    border-style: double dotted solid ridge;
+}
