@@ -2,6 +2,13 @@ header {
     height: 100px;
     margin: 0 auto;
     background-color: lightblue;
+    /* color: white; */
+}
+header:hover {
+    height: 100px;
+    margin: 0 auto;
+    background-color: maroon;
+    font-size: large;
 }
 body1 {
     width: 800px;
@@ -17,12 +24,21 @@ div {
 main {
     display: flex;
     flex: 1;
-
     background-color: red;
+}
+main:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: black;
+    color: white;
+    flex-direction: row;
 }
 li {
     list-style: none;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
 
     justify-content: space-between;
 }
@@ -30,14 +46,32 @@ nav {
     width: 150px;
     background-color: blue;
 }
+nav:hover {
+    width: 150px;
+    background-color: pink;
+}
 aside {
     width: 200px;
     background-color: green;
+}
+aside:hover {
+    width: 200px;
+    background-color: olive;
 }
 footer {
     height: 150px;
     margin: 0 auto;
     background-color: lightgreen;
+}
+footer:hover {
+    /* height: 50px; */
+    margin: 0 auto;
+    background-color: yellow;
+    color: crimson;
+    font-size: large;
+    font-weight: bold;
+    font-family: "メイリオ";
+    text-align: center;
 }
 @media screen and (max-width: 900px) {
     body,
@@ -155,7 +189,7 @@ a.btn--shadow {
 
 /*その他と主な共通部分は省略*/
 
-a.btn-flat {
+a.btn-hmoon {
     overflow: hidden;
 
     padding: 1.5rem 6rem;
@@ -165,11 +199,11 @@ a.btn-flat {
     background: #000;
 }
 
-a.btn-flat span {
+a.btn-hmoon span {
     position: relative;
 }
 
-a.btn-flat:before {
+a.btn-hmoon:before {
     position: absolute;
     top: 0;
     left: 0;
@@ -187,7 +221,7 @@ a.btn-flat:before {
     background: #eb6100;
 }
 
-a.btn-flat:hover:before {
+a.btn-hmoon:hover:before {
     width: 400px;
     height: 400px;
 
@@ -196,8 +230,8 @@ a.btn-flat:hover:before {
     transform: translateX(-1%) translateY(-175px);
     background: #eb6100;
 }
-
-<br / > <bn > </bn > <br / > <bn > </bn > a.btn-flat {
+/*  */
+a.btn-bside {
     overflow: hidden;
 
     padding: 1.5rem 6rem;
@@ -207,12 +241,12 @@ a.btn-flat:hover:before {
     background: #000;
 }
 
-a.btn-flat span {
+a.btn-bside span {
     position: relative;
     z-index: 1;
 }
 
-a.btn-flat:before {
+a.btn-bside:before {
     position: absolute;
     top: 0;
     left: calc(-100% + 10px);
@@ -229,7 +263,7 @@ a.btn-flat:before {
     background: #094;
 }
 
-a.btn-flat:after {
+a.btn-bside:after {
     position: absolute;
     top: 0;
     right: calc(-100% + 10px);
@@ -246,12 +280,56 @@ a.btn-flat:after {
     background: #094;
 }
 
-a.btn-flat:hover:before {
+a.btn-bside:hover:before {
     -webkit-transform: translateX(50%) translateY(0);
     transform: translateX(50%) translateY(0);
 }
 
-a.btn-flat:hover:after {
+a.btn-bside:hover:after {
     -webkit-transform: translateX(-50%) translateY(0);
     transform: translateX(-50%) translateY(0);
+}
+/*  */
+a.btn-marrow {
+    border: 2px solid #000;
+    border-radius: 0;
+    background: #fff;
+
+    -webkit-transform-style: preserve-3d;
+
+    transform-style: preserve-3d;
+}
+
+a.btn-marrow:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 15px;
+    height: 100%;
+
+    content: "";
+    -webkit-transition: all 1s; /*.3s*/
+    transition: all 1s; /*.3s*/
+    -webkit-transform: translateX(0) translateY(0);
+    transform: translateX(0) translateY(0);
+
+    border-radius: 0 50% 50% 0;
+    background: #000;
+}
+
+a.btn-marrow:hover:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    line-height: 30px;
+
+    width: 30px;
+    height: 30px;
+
+    content: "\f061";
+    -webkit-transform: translateX(460%) translateY(0.5rem);
+    transform: translateX(460%) translateY(0.5rem);
+
+    color: #fff;
+    border-radius: 50%;
 }
