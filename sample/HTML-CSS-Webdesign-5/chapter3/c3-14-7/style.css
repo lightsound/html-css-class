@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  height: 300px;
+}
+.item {
+  background: #0bd;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+}

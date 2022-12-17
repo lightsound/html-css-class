@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+.item {
+  background: #0bd;
+  color: #fff;
+  padding: 10px;
+}

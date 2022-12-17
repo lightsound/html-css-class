@@ -1,0 +1,12 @@
+@charset "UTF-8";
+div {
+  background: #0bd;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+/*わかりやすいように地色を広げています*/
+div {
+  width: 500px;
+  height: 300px;
+}

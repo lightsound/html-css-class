@@ -2,7 +2,11 @@ article {
     background-color: skyblue;
     display: inline-block;
 }
-
+body {
+    background-color: #f5f2e5;
+    /* background-color: rgb(156, 164, 180);彩度か透明度を設定して背景画像が見えるようにするといいかも*/
+    background-image: url(../sample/HTML-CSS-Webdesign-5/chapter3/c3-08-1/images/bg.png);
+}
 section {
     background-color: silver;
     display: inline-block;
