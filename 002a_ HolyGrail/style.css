@@ -58,6 +58,27 @@ aside:hover {
     width: 200px;
     background-color: olive;
 }
+.sale_box {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    /* background: linear-gradient(to bottom, #99ccff, #0059b3); */
+    background: black;
+    color: white;
+}
+.sale {
+    font-size: 50px;
+    /* color: aqua; */
+}
+.rate {
+    font-size: 50px;
+    color: aqua;
+}
+.percent {
+    font-size: 20px;
+    /* color: aqua; */
+}
+footer {
 footer {
     height: 150px;
     margin: 0 auto;

@@ -22,18 +22,41 @@
                     <li>r</li>
                 </ul>
             </main>
-            <aside>right</aside>
+            <aside>
+                right
+                <!-- <div class="sale_box" id="makeImg"> -->
+    <table border="1" class="sale_box">
+        <tr>
+            <th colspan="3" class="sale"><bold><h1>SALE</h1></bold><a></th>
+        </tr>
+        <tr>
+            <th rowspan="2">MAX</th>
+            <th rowspan="2"><a class="rate">70</a></th>
+            <th><a class="percent">%</a></th>
+        </tr>
+        <tr>
+            <th>OFF</th>
+        </tr>
+        <tr>
+                <!-- <td colspan="3">2023.01.04 wed - 01.10 tue</td> -->
+                <td >2023</td>
+        </tr>
+                <tr>
+                <th colspan="3">01.04 wed - 01.10 tue</th>
+                </tr>
+    </table>
+                </div>
+            </aside>
         </div>
     </body1>
     <footer>footer フッター</footer>
     <br />
     <br />
-    <table border="1">
+    <table border="10">
         <tr>
             <th>セル１</th>
             <th>セル２</th>
-        </tr>
-        <tr>
+        </tr> <tr>
             <td rowspan="2">セル３＋５</td>
             <td>セル４</td>
         </tr>
@@ -41,14 +64,19 @@
             <td>セル６</td>
         </tr>
     </table>
-    <form action="expamle.php" method="post" name="contact-form">
-        ここにフォームの部品が入ります。<br />
-        <input type="text" placeholder="名字 名前" name="URL" id="" />
-        <br /><br />
+    <p action="expamle.php" method="post" name="contact-form">
+        ここにフォームの部品が入ります。
+        <p>
+        <input type="text" placeholder="名字" name="firstname" id="firstname" />
+        <input type="text" placeholder="名前" name="lastname" id="lastname " />
+        </p>
+        <p>
         <input type="radio" name="gender" value="男" />男
         <input type="radio" name="gender" value="女" checked />女
         <input type="radio" name="gender" value="その他" />その他 <br /><br />
-        好きな色：
+        </p>
+        <p>
+        行きたい地域：
         <input type="checkbox" name="travel" value="日本国内" id="japan" />
         <label for="japan">日本国内</label>
         <input type="checkbox" name="travel" value="ヨーロッパ" id="europe" />
@@ -57,8 +85,7 @@
         <label for="asia">東南アジア</label>
         <input type="checkbox" name="travel" value="アフリカ" id="africa" />
         <label for="africa">アフリカ</label>
-        <br />
-        <br />
+    </p>
         <input type="submit" value="サンプルページに飛ぶ" />
         <input
             type="submit"
@@ -71,9 +98,8 @@
         /></a>
 
         <input type="submit" value="サンプルページに飛ぶ" />
-
-        <br />
-        <br />
+    </p>
+    <p>
         血液型
         <select name="bloodtype" id="">
             <option value="A">A</option>
@@ -83,7 +109,7 @@
             <option value="不明">不明</option>
         </select>
         型
-        <br /><br />
+    </p>
         <textarea
             name="message"
             id=""
@@ -92,20 +118,22 @@
             placeholder="メッセージを入力"
         ></textarea>
     </form>
-    <a href="./index2.html">
-        <input type="submit" value="サンプルページに飛ぶ"
-    /></a>
-
-    <br /><br />
+    <p>
+    <!-- <a href="./index2.html"> -->
+        <input type="submit" value="送信する。" />
+    <!-- </a> -->
+    </p>
+    <p>
     角丸大 btn--orange
     <a href="index2.html" class="btn btn--orange btn--radius">PUSH</a>
-    <br /><bn></bn>
-    <br /><bn></bn>
+    </p>
+    <p>
     <a href="index2.html" class="btn btn-hmoon"><span>PUSH--PUSH！</span></a>
-    <br /><bn></bn>
-    <br /><bn></bn>
-    <a href="index2.html" class="btn btn-bside"><span>PUSH==PUSH==PUSH！</span></a>
-    <br /><bn></bn>
-    <br /><bn></bn>
+    </p>
+    <p>
+    <a href="index2.html" class="btn btn-bside" ><span>PUSH==PUSH==PUSH！</span></a >
+    </p>
+    <p>
     <a href="index2.html" class="btn btn-marrow"><span>PUSH！</span></a>
+    </p>
 </html>
