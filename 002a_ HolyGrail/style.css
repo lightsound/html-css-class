@@ -75,7 +75,7 @@ aside:hover {
     color: aqua;
 }
 .percent {
-    font-size: 20px;
+    font-size: 30px;
     /* color: aqua; */
 }
 footer {
@@ -238,7 +238,7 @@ a.btn-hmoon:before {
     transform: translateX(-80%) translateY(-25px);
 
     border-radius: 50%;
-    background: #e67bb6;
+    background: #eb6100;
 }
 
 a.btn-hmoon:hover:before {
@@ -248,7 +248,7 @@ a.btn-hmoon:hover:before {
     -webkit-transform: translateX(-1%) translateY(-175px);
 
     transform: translateX(-1%) translateY(-175px);
-    background: #e67bb6;
+    background: #eb6100;
 }
 /*  */
 a.btn-bside {
