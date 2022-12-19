@@ -54,7 +54,7 @@ aside {
     width: 200px;
     background-color: green;
 }
-aside:hover {
+aside:hover > .sale_box{
     width: 200px;
     background-color: olive;
 }
@@ -73,6 +73,13 @@ aside:hover {
 .rate {
     font-size: 50px;
     color: aqua;
+}
+/* .sale_box:hover > .rate { */
+.sale_box:hover {
+    /* font-size: 50px; */
+    /* .rate { */
+        color: red;
+    /* } */
 }
 .percent {
     font-size: 30px;
