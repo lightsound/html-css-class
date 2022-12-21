@@ -4,7 +4,7 @@ header {
     background-color: lightblue;
     /* color: white; */
 }
-.body1 {
+body1 {
     width: 800px;
     margin: 0 auto;
     min-height: 10vh;
@@ -40,10 +40,6 @@ nav {
     width: 150px;
     background-color: blue;
 }
-nav:hover {
-    width: 150px;
-    background-color: pink;
-}
 aside {
     width: 200px;
     background-color: green;
@@ -52,12 +48,6 @@ aside {
 .rate {
     font-size: 50px;
     color: aqua;
-}
-nav:hover > .rate{
-/* aside:hover > .sale_box > .percent{ */
-    width: 200px;
-    /* background-color: olive; */
-    color: navy;
 }
 .sale_box {
     margin: auto;
@@ -71,12 +61,10 @@ nav:hover > .rate{
     font-size: 50px;
     /* color: aqua; */
 }
-/* .sale_box:hover > .rate { */
-.sale_box:hover {
+/* aside:hover .sale_box,aside:hover .rate{ */
+aside:hover .rate {
     /* font-size: 50px; */
-    /* .rate { */
-        color: red;
-    /* } */
+    color: red;
 }
 .percent {
     font-size: 30px;
@@ -86,16 +74,6 @@ footer {
     height: 150px;
     margin: 0 auto;
     background-color: lightgreen;
-}
-footer:hover {
-    /* height: 50px; */
-    margin: 0 auto;
-    background-color: yellow;
-    color: crimson;
-    font-size: large;
-    font-weight: bold;
-    font-family: "メイリオ";
-    text-align: center;
 }
 @media screen and (max-width: 900px) {
     body,
