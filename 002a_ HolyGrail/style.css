@@ -11,11 +11,10 @@ header:hover {
     font-size: large;
 }
 body1 {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
     min-height: 10vh;
     display: flex;
-    background-color: brown; /*何故か色がつかない*/
 }
 div {
     display: flex;
@@ -24,21 +23,21 @@ div {
 main {
     display: flex;
     flex: 1;
-    background-color: red;
+    background-color: yellow;
 }
 main:hover {
     display: flex;
     align-items: center;
     justify-content: center;
     flex: 1;
-    background-color: black;
+    background-color: blue;
     color: white;
     flex-direction: row;
 }
 li {
     list-style: none;
-    /* flex-direction: column-reverse; */
-    flex-direction: row;
+    flex-direction: column-reverse;
+    /* flex-direction: column */
 
     justify-content: space-between;
 }
@@ -54,9 +53,16 @@ aside {
     width: 200px;
     background-color: green;
 }
-aside:hover > .sale_box{
+
+.rate {
+    font-size: 50px;
+    color: aqua;
+}
+nav:hover > .rate{
+/* aside:hover > .sale_box > .percent{ */
     width: 200px;
-    background-color: olive;
+    /* background-color: olive; */
+    color: navy;
 }
 .sale_box {
     margin: auto;
@@ -69,10 +75,6 @@ aside:hover > .sale_box{
 .sale {
     font-size: 50px;
     /* color: aqua; */
-}
-.rate {
-    font-size: 50px;
-    color: aqua;
 }
 /* .sale_box:hover > .rate { */
 .sale_box:hover {

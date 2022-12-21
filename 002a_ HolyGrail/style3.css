@@ -1,0 +1,112 @@
+header {
+    height: 100px;
+    margin: 0 auto;
+    background-color: lightblue;
+    /* color: white; */
+}
+.body1 {
+    width: 800px;
+    margin: 0 auto;
+    min-height: 10vh;
+    display: flex;
+    background-color: brown; /*何故か色がつかない*/
+}
+div {
+    display: flex;
+    flex: 1;
+}
+main {
+    display: flex;
+    flex: 1;
+    background-color: red;
+}
+main:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: black;
+    color: white;
+    flex-direction: row;
+}
+li {
+    list-style: none;
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+nav {
+    width: 150px;
+    background-color: blue;
+}
+nav:hover {
+    width: 150px;
+    background-color: pink;
+}
+aside {
+    width: 200px;
+    background-color: green;
+}
+
+.rate {
+    font-size: 50px;
+    color: aqua;
+}
+nav:hover > .rate{
+/* aside:hover > .sale_box > .percent{ */
+    width: 200px;
+    /* background-color: olive; */
+    color: navy;
+}
+.sale_box {
+    margin: auto;
+    /* width: 150px; */
+    /* height: 150px; */
+    /* background: linear-gradient(to bottom, #99ccff, #0059b3); */
+    background: black;
+    color: white;
+}
+.sale {
+    font-size: 50px;
+    /* color: aqua; */
+}
+/* .sale_box:hover > .rate { */
+.sale_box:hover {
+    /* font-size: 50px; */
+    /* .rate { */
+        color: red;
+    /* } */
+}
+.percent {
+    font-size: 30px;
+    /* color: aqua; */
+}
+footer {
+    height: 150px;
+    margin: 0 auto;
+    background-color: lightgreen;
+}
+footer:hover {
+    /* height: 50px; */
+    margin: 0 auto;
+    background-color: yellow;
+    color: crimson;
+    font-size: large;
+    font-weight: bold;
+    font-family: "メイリオ";
+    text-align: center;
+}
+@media screen and (max-width: 900px) {
+    body,
+    nav,
+    aside {
+        width: 100%;
+    }
+    div {
+        flex-direction: column;
+    }
+    main {
+        order: -1;
+    }
+}
