@@ -20,7 +20,9 @@ main {
     flex: 1;
     background-color: red;
 }
-main:hover {
+main:hover > *:first-of-type{
+/* main:hover > ul{ */
+/* main:hover { */
     display: flex;
     align-items: center;
     justify-content: center;
