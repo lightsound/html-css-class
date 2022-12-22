@@ -55,10 +55,9 @@ aside {
     /* font-size: 50px; */
     color: blue;
 }
-/* .cut_line:hover { */
-aside:hover .sale_box {
-    /* font-size: 50px; */
-    color: yellow ;
+.cut_line:hover {
+/* aside:hover .sale_box { */
+    color: darkslateblue ;
 }
 
 
