@@ -346,7 +346,7 @@ a.btn-marrow:hover:before {
     width: 30px;
     height: 30px;
 
-    content: "\f061";
+    content: "\f021";
     -webkit-transform: translateX(460%) translateY(0.5rem);
     transform: translateX(460%) translateY(0.5rem);
 
