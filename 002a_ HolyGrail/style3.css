@@ -51,6 +51,18 @@ aside {
     font-size: 50px;
     color: aqua;
 }
+.year {
+    /* font-size: 50px; */
+    color: blue;
+}
+/* .cut_line:hover { */
+aside:hover .sale_box {
+    /* font-size: 50px; */
+    color: yellow ;
+}
+
+
+
 .sale_box {
     margin: auto;
     /* width: 150px; */
@@ -61,10 +73,8 @@ aside {
 }
 .sale {
     font-size: 50px;
-    /* color: aqua; */
 }
-/* aside:hover .sale_box,aside:hover .rate{ */
-aside:hover .rate {
+.sale_box:hover .rate, .sale_box:hover .year {
     /* font-size: 50px; */
     color: red;
 }
