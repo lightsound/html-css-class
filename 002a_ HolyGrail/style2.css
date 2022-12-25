@@ -19,6 +19,12 @@ section {
 section p {
     color: red;
 }
+/* main:hover li{ */
+li:hover {
+    display: flex;
+    flex-direction: column-reverse;
+    color: green;
+}
 
 .container {
     display: inline-flex;
