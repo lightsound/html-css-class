@@ -16,9 +16,8 @@ section {
     background-color: silver;
     display: inline-block;
 }
-/*このセクションがうまく働いてない。*/
-section > p {
-    color: chartreuse;
+section p {
+    color: red;
 }
 
 .container {
@@ -56,46 +55,18 @@ section > p {
 p.bbb {
     color: chartreuse;
 }
-a.btn-marrow {
-    border: 2px solid #000;
-    border-radius: 0;
-    background: #fff;
-
-    -webkit-transform-style: preserve-3d;
-
-    transform-style: preserve-3d;
-}
-
-a.btn-marrow:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 15px;
-    height: 100%;
-
-    content: "";
-    -webkit-transition: all 1s; /*.3s*/
-    transition: all 1s; /*.3s*/
-    -webkit-transform: translateX(0) translateY(0);
-    transform: translateX(0) translateY(0);
-
-    border-radius: 0 50% 50% 0;
-    background: #000;
-}
-
-a.btn-marrow:hover:before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: bold;
-    line-height: 30px;
-
-    width: 30px;
-    height: 30px;
-
-    content: "\f061";
-    -webkit-transform: translateX(460%) translateY(0.5rem);
-    transform: translateX(460%) translateY(0.5rem);
-
+.item {
+    background: red;
     color: #fff;
-    border-radius: 50%;
+    margin: 10px;
+    padding: 10px;
+}
+.container{
+    display: grid;
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap-reverse; */
+    /* justify-content: space-around; */
+    grid-template-columns: 200px 200px 200px 200px 200px 200px 100px 100px 100px;
+
+
 }
