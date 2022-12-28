@@ -30,7 +30,7 @@ main:hover {
     align-items: center;
     justify-content: center;
     flex: 1;
-    background-color: blue;
+    background-color: green;
     color: white;
     flex-direction: row;
 }
@@ -95,7 +95,7 @@ footer {
 footer:hover {
     /* height: 50px; */
     margin: 0 auto;
-    background-color: yellow;
+    background-color: olive;
     color: crimson;
     font-size: large;
     font-weight: bold;
