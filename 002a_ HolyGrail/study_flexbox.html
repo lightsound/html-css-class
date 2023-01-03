@@ -1,101 +1,107 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <title>about flexbox</title>
-        <link rel="stylesheet" href="CSS/style2.css" />
-    </head>
-    <body>
-        <article>
-            <h1>明日の天気</h1>
-            <p>明日は曇りのち晴れでしょう。</p>
-        </article>
-        <section>
-            <h2>おすすめの着こなしh2</h2>
-            <p class="aaa">
-                この時期は温かい気温が続きますが、１枚羽織る服があるといいでしょう。
-            </p>
-        </section>
+  <head>
+    <meta charset="UTF-8" />
+    <title>about flexbox</title>
+    <link rel="stylesheet" href="CSS/style2.css" />
+  </head>
+  <body>
+    <article>
+      <h1>明日の天気</h1>
+      <p>明日は曇りのち晴れでしょう。</p>
+    </article>
+    <section>
+      <h2>おすすめの着こなしh2</h2>
+      <p class="aaa">
+        この時期は温かい気温が続きますが、１枚羽織る服があるといいでしょう。
+      </p>
+    </section>
 
-        <ul class="list1">
-            <li>
-                <h1>明日の天気list1</h1>
-                <p>明日は曇りのち晴れでしょう。</p>
-            </li>
-            <li>
-                <h1>おすすめの着こなし</h1>
-                <p>
-                    この時期は温かい気温が続きますが、１枚羽織る服があるといいでしょう。
-                </p>
-            </li>
-        </ul>
-        <ul class="list2">
-            <li>
-                <h1>明日の天気 list2</h1>
-                <p>明日は曇りのち晴れでしょう。</p>
-            </li>
-            <li>
-                <h2>おすすめの着こなし</h2>
-                <p class="bbb">
-                    この時期は温かい気温が続きますが、１枚羽織る服があるといいでしょう。
-                </p>
-            </li>
-        </ul>
-    </body>
-
+    <p></p>
     <section id="about">
-        <p>これは概要です。</p>
-        <!-- aタグ -->
-        <!-- <a href="#" onclick="history.back(-1);return false;"></a> -->
-        <!-- buttonタグ -->
-        <a
-            href="#"
-            class="btn btn-marrow"
-            onclick="history.back(-1);return false;"
-        >
-            <span>PUSH！</span>
-        </a>
-        <button type="button" onclick="history.back()">戻る</button>
+      <p>これは概要です。</p>
+      <!-- aタグ -->
+      <!-- <a href="#" onclick="history.back(-1);return false;"></a> -->
+      <!-- buttonタグ -->
+      <a
+        href="#"
+        class="btn btn-marrow"
+        onclick="history.back(-1);return false;"
+      >
+        <span>PUSH！</span>
+      </a>
+      <button type="button" onclick="history.back()">戻る</button>
     </section>
     <script>
-        const backLink = document.getElementById("back-link");
-        backLink.addEventListener("click", () => {
-            history.back(
-                -1
-            ); /*ヒストリーバックが効かない場合、デフォルトを指定できるといい。*/
-        });
+      const backLink = document.getElementById("back-link");
+      backLink.addEventListener("click", () => {
+        history.back(
+          -1
+        ); /*ヒストリーバックが効かない場合、デフォルトを指定できるといい。*/
+      });
     </script>
     <p></p>
     <div1 class="container">
-        <div class="item">Item 1</div>
-        <div class="item">Item 2</div>
-        <div class="item">Item 3</div>
-        <div class="item">Item 4</div>
-        <div class="item">Item 5</div>
-        <div class="item">Item 6</div>
-        <div class="item">Item 7</div>
-        <div class="item">Item 8</div>
-        <div class="item">Item 9</div>
-        <div class="item">Item 10</div>
-        <div class="item">Item 11</div>
-        <div class="item">Item 12</div>
-        <div class="item">Item 13</div>
-        <div class="item">Item 14</div>
-        <div class="item">Item 15</div>
-        <div class="item">Item 16</div>
-        <div class="item">Item 17</div>
-        <div class="item">Item 18</div>
-        <div class="item">Item 19</div>
-        <div class="item">Item 20</div>
-        <div class="item">Item 21</div>
-        <div class="item">Item 22</div>
-        <div class="item">Item 23</div>
-        <div class="item">Item 24</div>
-        <div class="item">Item 25</div>
-        <div class="item">Item 26</div>
-        <div class="item">Item 27</div>
-        <div class="item">Item 28</div>
-        <div class="item">Item 29</div>
-        <div class="item">Item 30</div>
+      <ul class="list">
+        <li class="item">Item 1</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 2</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 3</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 4</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 5</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 6</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 7</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 8</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 9</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 10</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 11</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 12</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 13</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 14</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 15</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 16</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 17</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 18</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 19</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 20</li>
+      </ul>
     </div1>
+  </body>
 </html>
