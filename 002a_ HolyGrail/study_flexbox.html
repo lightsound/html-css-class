@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>about flexbox</title>
+    <link rel="stylesheet" href="CSS/style2.css" />
+  </head>
+  <body>
+    <article>
+      <h1>明日の天気</h1>
+      <p>明日は曇りのち晴れでしょう。</p>
+    </article>
+    <section>
+      <h2>おすすめの着こなしh2</h2>
+      <p class="aaa">
+        この時期は温かい気温が続きますが、１枚羽織る服があるといいでしょう。
+      </p>
+    </section>
+
+    <p></p>
+    <section id="about">
+      <p>これは概要です。</p>
+      <!-- aタグ -->
+      <!-- <a href="#" onclick="history.back(-1);return false;"></a> -->
+      <!-- buttonタグ -->
+      <a
+        href="#"
+        class="btn btn-marrow"
+        onclick="history.back(-1);return false;"
+      >
+        <span>PUSH！</span>
+      </a>
+      <button type="button" onclick="history.back()">戻る</button>
+    </section>
+    <script>
+      const backLink = document.getElementById("back-link");
+      backLink.addEventListener("click", () => {
+        history.back(
+          -1
+        ); /*ヒストリーバックが効かない場合、デフォルトを指定できるといい。*/
+      });
+    </script>
+    <p></p>
+    <div1 class="container">
+      <ul class="list">
+        <li class="item">Item 1</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 2</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 3</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 4</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 5</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 6</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 7</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 8</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 9</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 10</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 11</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 12</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 13</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 14</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 15</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 16</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 17</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 18</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 19</li>
+      </ul>
+      <ul class="list">
+        <li class="item">Item 20</li>
+      </ul>
+    </div1>
+  </body>
+</html>

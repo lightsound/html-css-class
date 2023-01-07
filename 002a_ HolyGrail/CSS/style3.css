@@ -1,0 +1,106 @@
+header {
+    height: 100px;
+    margin: 0 auto;
+    background-color: lightblue;
+    /* color: white; */
+}
+body1 {
+    width: 800px;
+    margin: 0 auto;
+    min-height: 10vh;
+    display: flex;
+    background-color: brown; /*何故か色がつかない*/
+}
+div {
+    display: flex;
+    flex: 1;
+}
+main {
+    display: flex;
+    flex: 1;
+    background-color: red;
+}
+main:hover > *:first-of-type {
+    /* main:hover > ul{ */
+    /* main:hover { */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: black;
+    color: white;
+    flex-direction: row;
+}
+li {
+    list-style: none;
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+
+    justify-content: space-between;
+}
+nav {
+    width: 150px;
+    background-color: blue;
+}
+/* nav:hover [class$="v"] { */
+nav:hover * {
+    width: 150px;
+    color: red;
+}
+aside {
+    width: 200px;
+    background-color: green;
+}
+
+.rate {
+    font-size: 50px;
+    color: aqua;
+}
+.year {
+    /* font-size: 50px; */
+    color: blue;
+}
+.cut_line:hover {
+    /* aside:hover .sale_box { */
+    color: darkslateblue;
+}
+
+.sale_box {
+    margin: auto;
+    /* width: 150px; */
+    /* height: 150px; */
+    /* background: linear-gradient(to bottom, #99ccff, #0059b3); */
+    background: black;
+    color: white;
+}
+.sale {
+    font-size: 50px;
+}
+.sale_box:hover .rate,
+.sale_box:hover .year {
+/* .sale_box:hover [class="rate"]{ */
+    /* font-size: 50px; */
+    color: red;
+}
+.percent {
+    font-size: 30px;
+    /* color: aqua; */
+}
+footer {
+    height: 150px;
+    margin: 0 auto;
+    background-color: lightgreen;
+}
+@media screen and (max-width: 900px) {
+    body,
+    nav,
+    aside {
+        width: 100%;
+    }
+    div {
+        flex-direction: column;
+    }
+    main {
+        order: -1;
+    }
+}
